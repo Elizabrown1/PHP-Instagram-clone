@@ -1,0 +1,231 @@
+/* body{
+	background-color: #fafafa;
+	padding: 60px;
+	font-family: 'Droid Sans', sans-serif;
+
+} */
+
+a{
+  text-decoration: none;
+}
+
+.Instagram-card{
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-radius: 15px;
+	width: 100%;
+	max-width: 480px;
+	margin: auto;
+}
+
+.Instagram-card-header{
+	padding: 10px;
+	height: 40px;
+}
+
+.Instagram-card-user-image{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+  overflow: hidden;
+  padding: 2px;
+  background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.Instagram-card-time{
+	float: right;
+	width: 80px;
+	padding-top:10px;
+	text-align: right;
+	color: #999;
+}
+.Instagram-card-image{
+  border: 2px solid #fff;
+}
+
+.Instagram-card-user-name{
+	margin-left:10px;
+	font-weight:bold;
+  color: #262626;
+}
+
+
+.Instagram-card-content{
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.Likes{
+  font-weight: bold;
+}
+
+.Instagram-card-content-user{
+  font-weight: bold;
+  color: #262626;
+}
+
+.hashtag{
+  color: #003569;
+}
+
+.comments{
+  color:#999;
+}
+
+.user-comment{
+  color: #003569;
+}
+
+.Instagram-card-footer{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+ 
+}
+
+
+.footer-action-icons{
+  font-size: 16px;
+  color: #ccc;
+}
+
+.comments-input{
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 310). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox and floats are used as a fallback so that browsers which don't support grid will still recieve a similar layout.
+
+*/
+
+
+
+
+
+
+.main{
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  /* margin-left: 80px; */
+}
+
+.wrapper{
+  width: 50%;
+  /* max-width: 1000px; */
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 30px;
+}
+
+.left-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.status-wrapper{
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.status-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.status-card{
+  flex: 0 0 auto;
+  width: 80px;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 5px; */
+}
+
+.profile-pic{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3px;
+  background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.username{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  margin-top:5px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+
+
+
+/* * Spinner Animation */ 
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Loader */
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border: 0.4rem solid #999;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: loader 500ms linear infinite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
